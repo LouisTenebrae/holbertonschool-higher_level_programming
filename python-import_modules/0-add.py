@@ -2,6 +2,6 @@
 from add_0 import add
 a = 1
 b = 2
-print(("1 + 2 = %d" % add(a, b)))
+print("{} + {} = {}".format(a, b, add(a, b)))
 add.__name__
 __name__ = "__main__"
