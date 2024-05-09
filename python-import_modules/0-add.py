@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import add_0
+from add_0 import add
 a = 1
 b = 2
-print("{} + {} = {}".format(a, b, add_0.add(a, b)))
-add_0.__name__
+print(("1 + 2 = %d" % add(a, b)))
+add.__name__
 __name__ = "__main__"
