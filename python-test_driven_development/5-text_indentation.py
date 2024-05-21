@@ -1,10 +1,21 @@
 #!/usr/bin/python3
-"""Function that prints a text with 2 new lines after each of these characters: ., ? and :"""
+"""text indent"""
+
+
 def text_indentation(text):
-    """Prints a text with 2 new lines after each of these characters: ., ? and :"""
-    if not isinstance(text, str):
+    """indents a text"""
+    e = "text_indentation() missing 1 required positional argument: 'text'"
+    if text is None:
+        raise TypeError(e)
+    if type(text) is not str:
         raise TypeError("text must be a string")
-    text = text.replace(". ", ".\n$\n")
-    text = text.replace("? ", "?\n$\n")
-    text = text.replace(": ", ":\n$\n")
-    print(text, end="")
+    if not text:
+        raise TypeError("Text is empty")
+    c = 0
+    while c < len(text):
+        print(text[c], end="")
+        if text[c] in ".?:":
+            print("\n")
+            while c + 1 < len(text) and text[c + 1] == " ":
+                c += 1
+        c += 1
