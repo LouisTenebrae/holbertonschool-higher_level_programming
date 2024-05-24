@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 from abc import ABC, abstractmethod
-'''Import abstractmethod'''
+'''Importing ABC, abstractmethod'''
 
 
 class Animal(ABC):
-    '''Animal class'''
+    '''Creating Animal class'''
     @abstractmethod
     def sound(self):
         '''Sound method'''
@@ -12,14 +12,14 @@ class Animal(ABC):
 
 
 class Dog(Animal):
-    '''Dog class'''
+    '''Creating Dog class'''
 
     def sound(self):
         return 'Bark'
 
 
 class Cat(Animal):
-    '''Cat class'''
+    '''Creating Cat class'''
 
     def sound(self):
         return 'Meow'

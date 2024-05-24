@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 class SwimMixin:
-    '''SwimMixin class'''
+    '''Creates SwimMixin class'''
 
     def swim(self):
         '''Swim method'''
@@ -8,7 +8,7 @@ class SwimMixin:
 
 
 class FlyMixin:
-    '''FlyMixin class'''
+    '''Creating FlyMixin class'''
 
     def fly(self):
         '''Fly method'''
@@ -16,7 +16,7 @@ class FlyMixin:
 
 
 class Dragon(SwimMixin, FlyMixin):
-    '''Dragon class'''
+    '''Creating Dragon class'''
 
     def roar(self):
         '''Roar method'''

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 class Fish:
-    '''Fish class'''
+    '''Creating Fish class'''
 
     def swim(self):
         '''Swim method'''
@@ -13,7 +13,7 @@ class Fish:
 
 
 class Bird:
-    '''Bird class'''
+    '''Creating Bird class'''
 
     def fly(self):
         '''Fly method'''
@@ -25,16 +25,16 @@ class Bird:
 
 
 class FlyingFish(Fish, Bird):
-    '''FlyingFish class'''
+    '''Creating FlyingFish class'''
 
     def fly(self):
-        '''Re-writing fly class'''
+        '''Re-writes fly class'''
         print('The flying fish is soaring!')
 
     def swim(self):
-        '''Re-writing swim class'''
+        '''Re-writes swim class'''
         print('The flying fish is swimming!')
 
     def habitat(self):
-        '''Re-writing habitat class'''
+        '''Re-writes habitat class'''
         print('The flying fish lives both in water and the sky!')

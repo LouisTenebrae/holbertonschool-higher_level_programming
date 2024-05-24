@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 class VerboseList(list):
-    '''VerboseList class'''
+    '''Creating VerboseList class'''
 
     def append(self, item):
         '''Append method'''

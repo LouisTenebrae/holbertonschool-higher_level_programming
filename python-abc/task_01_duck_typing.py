@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 from abc import ABC, abstractmethod
 from math import pi
-'''Import abstractmethod'''
+'''Importing ABC, abstractmethod'''
 
 
 class Shape(ABC):
-    '''Shape class'''
+    '''Creating Shape class'''
     @abstractmethod
     def area(self):
         '''Area method'''
@@ -18,7 +18,7 @@ class Shape(ABC):
 
 
 class Circle(Shape):
-    '''Circle class'''
+    '''Creating Circle class'''
 
     def __init__(self, radius):
         self.radius = abs(radius)
@@ -33,7 +33,7 @@ class Circle(Shape):
 
 
 class Rectangle(Shape):
-    '''Rectangle class'''
+    '''Creating Rectangle class'''
 
     def __init__(self, width, height):
         self.width = width
@@ -49,7 +49,7 @@ class Rectangle(Shape):
 
 
 def shape_info(self):
-    '''Calls area and perimeter methods'''
+    '''Area and perimeter methods'''
     area = self.area()
     perimeter = self.perimeter()
 
