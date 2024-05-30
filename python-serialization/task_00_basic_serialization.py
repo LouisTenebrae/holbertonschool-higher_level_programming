@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Serialization module that adds the functionality\
-    to serialize and deserialize a Python object to and from a file."""
+"""Serialization module """
 
 import json
 
