@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """Serialization module """
-
 import json
 
-def serialize(data, filename):
+def serialize_and_save_to_file(data, filename):
     """Serialize the given object and write it to a file."""
     with open(filename, 'w') as file:
         json.dump(data, file)
