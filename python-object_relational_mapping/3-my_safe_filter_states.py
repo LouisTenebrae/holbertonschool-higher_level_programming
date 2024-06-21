@@ -10,7 +10,7 @@ if __name__ == "__main__":
     curs = database.cursor()
     curs.execute("SELECT * FROM states WHERE name\
                   LIKE %s ORDER BY states.id\
-                  ASC", [argv[4]])
+                  ASC".format[argv[4]])
     rows = curs.fetchall()
     for row in rows:
         print(row)
