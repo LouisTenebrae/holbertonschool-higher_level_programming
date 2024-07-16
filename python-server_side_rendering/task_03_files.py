@@ -17,8 +17,7 @@ def product_display():
 
     if source not in ['json', 'csv']:
         error_message = 'Wrong source parameter. Use "json" or "csv".'
-        return render_template('product_display.html',
-                               error_message=error_message)
+        return render_template('product_display.html', error_message=error_message)
 
     if source == 'json':
         products_data = read_json_data('products.json')
@@ -27,12 +26,10 @@ def product_display():
 
     if product_id:
         filtered_products = [
-            product for product in products_data
-            if product['id'] == product_id]
+            product for product in products_data if product['id'] == product_id]
         if not filtered_products:
             error_message = f'Product not found with ID: {product_id}'
-            return render_template('product_display.html',
-                                   error_message=error_message)
+            return render_template('product_display.html', error_message=error_message)
 
         products_data = filtered_products
 
